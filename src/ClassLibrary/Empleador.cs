@@ -4,6 +4,23 @@ namespace ClassLibrary;
 
 public class Empleador
 {
+    public string nombre;
+    public string apellido;
+    public intint ID;
+    public ArrayList<int> coordenadas;
+    public string CedulaIdentidad;
+    public Empleador(string nombre, string apellido, int ID, ArrayList<int> coordenadas, string CedulaIdentidad)
+    {
+       this.nombre=nombre;
+        this.apellido=apellido;
+        this.ID=ID;
+        this.coordenadas=coordenadas;
+        this.cedulaIdentidad=cedulaIdentidad; 
+    }
+
+
+
+
     public List<string> OfertasPorCategoria() //Deberia tener una clase oferta Y una clase Ofertas que contenga la lista de Ofertas?
     {
 
@@ -28,7 +45,7 @@ public class Empleador
         return ("Estas registrado");
     }
 
-    public string GetInfoOferta(Oferta)//Deberia hacer una clase Oferta?
+    public string GetInfoOferta(Oferta oferta)
     {
         
     }

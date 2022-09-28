@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 public class Oferta   
 {
-    public Oferta(string categoria, ArrayList<int> coordenadas)
+    public Oferta(string categoria, ArrayList<int> coordenadas, string nombre)
     {
         this.categoria = categoria;
         this.coordenadas = coordenadas;
+        this.nombre=nombre;
     }
 }
