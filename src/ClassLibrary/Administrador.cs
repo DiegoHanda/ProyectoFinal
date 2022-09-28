@@ -2,3 +2,40 @@
 
 -Como administrador, quiero poder dar de baja ofertas de servicios, avisando al oferente para que de esa forma, pueda evitar ofertas inadecuadas.*/
 
+using System;
+using System.Collections.Generic;
+namespace ClassLibrary;
+//Creemos que el administrador deberia conocer la lista de categorias. Como se hace?
+//Creemos que el administrador deberia conocer la lista de ofertas. Como se hace?
+public class Administrador
+{
+    public string NumbreUsuario {get; set;}
+    public string Contraseña {get;set;}
+
+    public void AddCategoria(string categoria)//Esta bien?
+    {
+        if (!categorias.Contains(categoria))
+        Categorias.Add(categoria);
+    }
+
+    public void RemoveCategoria(string categoria)//Esta bien?
+    {
+        if (categorias.Contains(categoria))
+        {
+            categorias.Remove(categoria);
+        }
+    }
+
+    public void RemoveOferta(string oferta)//Esta bien?
+    {
+        if (categorias.Contains(oferta))
+        {
+            categorias.Remove(oferta);
+        }
+    }
+
+    public string Registrarse()//como se implementa esto?
+    {
+
+    }
+}
