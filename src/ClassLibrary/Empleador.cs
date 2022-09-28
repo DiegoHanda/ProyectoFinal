@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class Empleador
+public class Empleador:Usuario
 {
     public List<string> OfertasPorCategoria() //Deberia tener una clase oferta Y una clase Ofertas que contenga la lista de Ofertas?
     {
@@ -28,7 +28,7 @@ public class Empleador
 
     }
 
-    public string GetInfoOferta(Oferta)
+    public string GetInfoOferta(Oferta nombre)
     {
         
     }

@@ -1,2 +1,4 @@
 Javier Odera:
-Clases Administrador, Categoria, Empleador, Ofertas, Trabajador
+Administrador, Empleador, Ofertas
+Diego Handalian:
+Usuario, Trabajador
