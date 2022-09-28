@@ -1,16 +1,8 @@
-public class Categoria
-{
-    public Categoria()
-    {
+using System;
+namespace ClassLibrary;
 
-    }
-    public list<T> categorizar(string CATEGORIA)
-    {/*
-        -llamo a lista con todos las ofertas
-        -lista vacia
-        -recorro la primer lista 
-        -por cada elemento hago get.categoria
-        -si get.categoria==CATEGORIA, lo agrego
-        -retornar lista vacia con todas las ofertas que tengan esta categoria*/
-    }
+public class Categoria //Esto va aca?
+{
+    List<string> categorias = new List<string>();
+ 
 }
