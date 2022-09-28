@@ -12,13 +12,13 @@ public class Administrador
     public string NumbreUsuario {get; set;}
     public string Contraseña {get;set;}
 
-    public void AddCategoria(string categoria)//Esta bien?
+    public void AddCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
     {
         if (!categorias.Contains(categoria))
         Categorias.Add(categoria);
     }
 
-    public void RemoveCategoria(string categoria)//Esta bien?
+    public void RemoveCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
     {
         if (categorias.Contains(categoria))
         {
@@ -26,7 +26,7 @@ public class Administrador
         }
     }
 
-    public void RemoveOferta(string oferta)//Esta bien?
+    public void RemoveOferta(string oferta)//Estos metodos deberian ir en el handler mas adelante
     {
         if (categorias.Contains(oferta))
         {
@@ -36,6 +36,6 @@ public class Administrador
 
     public string Registrarse()//como se implementa esto?
     {
-
+        return ("Estas registrado");
     }
 }

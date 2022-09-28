@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class trabajadoras
+public class trabajador
 {
-    
+
 }

@@ -23,12 +23,12 @@ public class Empleador
 
     }
 
-    public void Registrarse()
+    public string Registrarse()
     {
-
+        return ("Estas registrado");
     }
 
-    public string GetInfoOferta(Oferta)
+    public string GetInfoOferta(Oferta)//Deberia hacer una clase Oferta?
     {
         
     }
