@@ -10,4 +10,7 @@ public class Oferta
         this.coordenadas = coordenadas;
         this.precio= precio;
     }
+    public bool verificarCategoria(){
+        return;
+    }
 }
