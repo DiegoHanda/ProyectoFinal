@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class Oferta   
 {
-<<<<<<< HEAD
     public Oferta(string categoria, ArrayList<int> coordenadas, string nombre)
     {
         this.categoria = categoria;
