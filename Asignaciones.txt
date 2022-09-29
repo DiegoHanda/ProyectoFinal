@@ -1,4 +1,6 @@
 Javier Odera:
 Administrador, Empleador, Ofertas
 Diego Handalian:
-Usuario, Trabajador
+Usuario, Trabajador, OfertasManager
+Brian Morales:
+UML, CRC, CalificacionesManafer, Calificacion
