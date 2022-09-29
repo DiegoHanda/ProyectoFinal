@@ -10,8 +10,9 @@ public class Oferta
         this.coordenadas = coordenadas;
         this.nombre=nombre;
     }
-    public bool verificarCategoria(){
+    public bool verificarCategoria()
+    {
+        
         return;
-
     }
 }

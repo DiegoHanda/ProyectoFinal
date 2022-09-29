@@ -1,4 +1,4 @@
 Javier Odera:
 Administrador, Empleador, Ofertas
 Diego Handalian:
-Usuario, Trabajador
+Usuario, Trabajador, OfertasManager
