@@ -9,7 +9,16 @@ public class Trabajador: Usuario
         base(nombre, email, edad, telefono, contraseña, cedula);
     }
 
-    ofertasPorCategoria()
-    ofertasPorUbicacion()
-    ofertasPorReputacion()
+    public list ofertasPorCategoria()
+    {
+
+    }
+    public list ofertasPorUbicacion()
+    {
+
+    }
+    public list ofertasPorReputacion()
+    {
+        
+    }
 }
