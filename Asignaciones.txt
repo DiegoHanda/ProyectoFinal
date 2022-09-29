@@ -2,3 +2,5 @@ Javier Odera:
 Administrador, Empleador, Ofertas
 Diego Handalian:
 Usuario, Trabajador, OfertasManager
+Maicol Marcenaro:
+Categorias, Chat
