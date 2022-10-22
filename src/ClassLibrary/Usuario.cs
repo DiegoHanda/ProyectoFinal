@@ -1,7 +1,3 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
-namespace ClassLibrary;
 public class Usuario
 {
     public string Nombre {get; set;}
@@ -11,8 +7,7 @@ public class Usuario
     private string Contraseña;
     public string Cedula{get;}
     public List Calificaciones {get; set;}
-    public float Promedio {get; set;}
-    public Usuario(string nombre, string email, int edad, string telefono, string contraseña, string cedula)
+    public Usuario(string nombre, string email,int edad,string telefono,string contraseña,string cedula)
     {
         Nombre = nombre;
         Email = email;
@@ -21,16 +16,10 @@ public class Usuario
         Contraseña = contraseña;    
         Cedula = cedula;
         List <int> Calificaciones = new List();
-        Promedio=Calificaciones.Average();
     }
-    public void enviarMensaje(string mensaje, Usuario usuario)
-    {   
-        usuario.recibirMensaje(mensaje, nombre);
-    }
-    public string recibirMensaje(string mensaje, string nombre)
+    public void calificar ()
     {
-        return $"{nombre}, le ha enviado el siguiente mensaje: {mensaje}";
+        
     }
 
-    
 }

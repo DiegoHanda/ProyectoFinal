@@ -1,7 +1,0 @@
-1-Habría que validar si la Categoria que ingresa el Empleador es válida (existe), por lo que el Administrador debería agregar la Categoria a una lista de Categorias.
-
-2-En el UML dice que el Empleador crea la Oferta pero no debería ser asi, sino que la debería crear el Trabajador, y contratarla el Empleador.
-
-3- Todas las ofertas deberian estar en una lista segun su categoria.
-
-4- Revisar y Modificar UML.

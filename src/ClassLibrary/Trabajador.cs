@@ -21,8 +21,4 @@ public class Trabajador: Usuario
     {
         
     }
-    public string crearOferta(string oferta,string categoria, ArrayList<int> coordenadas, string nombre)
-    {
-        Oferta oferta = new Oferta(categoria, coordenadas, nombre);
-    }
 }

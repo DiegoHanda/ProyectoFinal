@@ -15,9 +15,7 @@ public class Administrador: Usuario
     public void AddCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
     {
         if (!categorias.Contains(categoria))
-        {
-            Categorias.Add(categoria);
-        }
+        Categorias.Add(categoria);
     }
 
     public void RemoveCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
