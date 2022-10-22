@@ -1,0 +1,8 @@
+Javier Odera:
+Administrador, Ofertas, OfertasManager
+Diego Handalian:
+Usuario, Empleador, Trabajador, Categoria
+Brian Morales:
+UML, CRC, CalificacionesManager, Calificacion, Chat
+
+ 
