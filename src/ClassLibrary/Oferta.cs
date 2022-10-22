@@ -6,9 +6,9 @@ public class Oferta
 {
     public Oferta(string categoria, ArrayList<int> coordenadas, string nombre)
     {
-        Categoria = categoria;
-        Coordenadas = coordenadas;
-        Nombre=nombre;
+        this.categoria = categoria;
+        this.coordenadas = coordenadas;
+        this.nombre=nombre;
     }
     public bool verificarCategoria()
     {
