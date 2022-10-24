@@ -7,9 +7,9 @@ using System.Collections.Generic;
 namespace ClassLibrary;
 //Creemos que el administrador deberia conocer la lista de categorias. Como se hace?
 //Creemos que el administrador deberia conocer la lista de ofertas. Como se hace?
-public class Administrador
+public class Administrador: Usuario
 {
-    public string NumbreUsuario {get; set;}
+    public string NombreUsuario {get; set;}
     public string Contraseña {get;set;}
 
     public void AddCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante

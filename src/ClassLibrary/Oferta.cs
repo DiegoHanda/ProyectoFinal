@@ -4,15 +4,15 @@ using System.Collections.Generic;
 
 public class Oferta   
 {
-
     public Oferta(string categoria, ArrayList<int> coordenadas, string nombre)
     {
         this.categoria = categoria;
         this.coordenadas = coordenadas;
         this.nombre=nombre;
     }
-    public bool verificarCategoria(){
+    public bool verificarCategoria()
+    {
+        
         return;
-
     }
 }

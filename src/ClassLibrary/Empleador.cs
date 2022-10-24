@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class Empleador
+public class Empleador:Usuario
 {
     public string nombre;
     public string apellido;

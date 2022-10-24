@@ -2,21 +2,23 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class Trabajador
+public class Trabajador: Usuario
 {
-    public string Nombre;
-    public string Apellido;
-    public intint ID;
-    public ArrayList<int> Coordenadas;
-    public string CedulaIdentidad;
-    public string Usuario;
-    public string Contraseña;
-    public Trabajador(string nombre, string apellido, int ID, ArrayList<int> coordenadas, string cedulaIdentidad, string usuario, string contraseña)
+    public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)
     {
-        this.Nombre=nombre;
-        this.Apellido=apellido;
-        this.ID=ID;
-        this.Coordenadas=coordenadas;
-        this.CedulaIdentidad=cedulaIdentidad;
+        base(nombre, email, edad, telefono, contraseña, cedula);
+    }
+
+    public list ofertasPorCategoria()
+    {
+
+    }
+    public list ofertasPorUbicacion()
+    {
+
+    }
+    public list ofertasPorReputacion()
+    {
+        
     }
 }
