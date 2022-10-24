@@ -6,7 +6,7 @@ public class Chat//Esto va aca?
     private string Trabajador= trabajador;
     private string Empleador= empleador;
 
-    private string crarChat()
+    private string CrarChat()
     {
         return;
     }
