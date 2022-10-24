@@ -4,11 +4,11 @@ public class OfertasManager
     {
 
     }
-    public void crearOferta()
+    public void CrearOferta()
     {
 
     }
-    public void ofertas()
+    public void Ofertas()
     {
 
     }

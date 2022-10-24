@@ -23,11 +23,11 @@ public class Usuario
         List <int> Calificaciones = new List();
         Promedio=Calificaciones.Average();
     }
-    public void enviarMensaje(string mensaje, Usuario usuario)
+    public void EnviarMensaje(string mensaje, Usuario usuario)
     {   
-        usuario.recibirMensaje(mensaje, nombre);
+        usuario.RecibirMensaje(mensaje, nombre);
     }
-    public string recibirMensaje(string mensaje, string nombre)
+    public string RecibirMensaje(string mensaje, string nombre)
     {
         return $"{nombre}, le ha enviado el siguiente mensaje: {mensaje}";
     }

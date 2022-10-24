@@ -10,7 +10,7 @@ public class Oferta
         Coordenadas = coordenadas;
         Nombre=nombre;
     }
-    public bool verificarCategoria()
+    public bool VerificarCategoria()
     {
         
         return;

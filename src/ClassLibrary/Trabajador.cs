@@ -9,19 +9,19 @@ public class Trabajador: Usuario
         base(nombre, email, edad, telefono, contraseña, cedula);
     }
 
-    public list ofertasPorCategoria()
+    public list OfertasPorCategoria()
     {
 
     }
-    public list ofertasPorUbicacion()
+    public list OfertasPorUbicacion()
     {
 
     }
-    public list ofertasPorReputacion()
+    public list OfertasPorReputacion()
     {
         
     }
-    public string crearOferta(string oferta,string categoria, ArrayList<int> coordenadas, string nombre)
+    public string CrearOferta(string oferta,string categoria, ArrayList<int> coordenadas, string nombre)
     {
         Oferta oferta = new Oferta(categoria, coordenadas, nombre);
     }
