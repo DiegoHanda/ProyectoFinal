@@ -9,13 +9,13 @@ public class Empleador:Usuario
     public intint ID;
     public ArrayList<int> Coordenadas;
     public string CedulaIdentidad;
-    public Empleador(string Nombre, string Apellido, int ID, ArrayList<int> Coordenadas, string CedulaIdentidad)
+    public Empleador(string nombre, string apellido, int id, ArrayList<int> coordenadas, string cedulaIdentidad)
     {
-        Nombre=nombre;
-        Apellido=apellido;
-        ID=ID;
-        Coordenadas=coordenadas;
-        CedulaIdentidad=cedulaIdentidad; 
+        this.Nombre=nombre;
+        this.Apellido=apellido;
+        this.ID=id;
+        this.Coordenadas=coordenadas;
+        this.CedulaIdentidad=cedulaIdentidad; 
     }
     public List<string> OfertasPorCategoria() //Deberia tener una clase oferta Y una clase Ofertas que contenga la lista de Ofertas?
     {

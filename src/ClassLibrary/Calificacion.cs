@@ -9,8 +9,8 @@ public class Calificacion
     public string Calificado {get; set;}
     public Calificacion(int value, string calificador, string calificado)
     {
-        Value = value;
-        Calificador = calificador;
-        Calificado = calificado;
+        this.Value = value;
+        this.Calificador = calificador;
+        this.Calificado = calificado;
     }
 }

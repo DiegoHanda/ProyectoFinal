@@ -11,22 +11,7 @@ public class Administrador: Usuario
 {
     public string NombreUsuario {get; set;}
     public string Contraseña {get;set;}
-
-    public void AddCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
-    {
-        if (!categorias.Contains(categoria))
-        {
-            Categorias.Add(categoria);
-        }
-    }
-
-    public void RemoveCategoria(string categoria)//Estos metodos deberian ir en el handler mas adelante
-    {
-        if (categorias.Contains(categoria))
-        {
-            categorias.Remove(categoria);
-        }
-    }
+    
 
     public void RemoveOferta(string oferta)//Estos metodos deberian ir en el handler mas adelante
     {

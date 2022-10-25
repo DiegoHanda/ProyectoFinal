@@ -14,23 +14,16 @@ public class Usuario
     public float Promedio {get; set;}
     public Usuario(string nombre, string email, int edad, string telefono, string contraseña, string cedula)
     {
-        Nombre = nombre;
-        Email = email;
-        Edad = edad;
-        Telefono = telefono;
-        Contraseña = contraseña;    
-        Cedula = cedula;
+        this.Nombre = nombre;
+        this.Email = email;
+        this.Edad = edad;
+        this.Telefono = telefono;
+        this.Contraseña = contraseña;    
+        this.Cedula = cedula;
         List <int> Calificaciones = new List();
-        Promedio=Calificaciones.Average();
+        this.Promedio=Calificaciones.Average();
     }
-    public void EnviarMensaje(string mensaje, Usuario usuario)
-    {   
-        usuario.RecibirMensaje(mensaje, nombre);
-    }
-    public string RecibirMensaje(string mensaje, string nombre)
-    {
-        return $"{nombre}, le ha enviado el siguiente mensaje: {mensaje}";
-    }
+    
 
     
 }
