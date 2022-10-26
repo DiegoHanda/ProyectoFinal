@@ -1,8 +1,8 @@
 Javier Odera:
-Administrador, Ofertas, OfertasManager
+Administrador, Ofertas, OfertasManager, Categorias Manager
 Diego Handalian:
-Usuario, Empleador, Trabajador, Categoria
+Usuarios manager, Usuario, Empleador, Trabajador, Categoria, usantes
 Brian Morales:
-UML, CRC, CalificacionesManager, Calificacion, Chat
+UML, CRC, CalificacionesManager, Calificacion,
 
  

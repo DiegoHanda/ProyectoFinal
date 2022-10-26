@@ -5,3 +5,5 @@
 3- Todas las ofertas deberian estar en una lista segun su categoria.
 
 4- Revisar y Modificar UML.
+
+5- Hay que hacer todos los managers. por ahora tenemos 3 que hacer

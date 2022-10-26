@@ -4,15 +4,11 @@ using System.Collections.Generic;
 
 public class Oferta   
 {
-    public Oferta(string categoria, ArrayList<int> coordenadas, string nombre)
+    public Oferta(Categoria categoria,  Usuario ofertante, ArrayList<int> coordenadas, string descripcion)
     {
-        Categoria = categoria;
-        Coordenadas = coordenadas;
-        Nombre=nombre;
-    }
-    public bool VerificarCategoria()
-    {
-        
-        return;
+        this.Categoria = categoria;
+        this.ofertante = ofertante;
+        this.Coordenadas = coordenadas;
+        this.Descripcion = descripcion;
     }
 }
