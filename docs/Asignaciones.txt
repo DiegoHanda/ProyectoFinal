@@ -1,5 +1,5 @@
 Javier Odera:
-Administrador, Ofertas, OfertasManager, Categorias Manager
+AdministradorV, OfertasV, OfertasManager, Categorias Manager
 Diego Handalian:
 Usuarios manager, Usuario, Empleador, Trabajador, Categoria, usantes
 Brian Morales:

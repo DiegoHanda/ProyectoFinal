@@ -19,9 +19,12 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            var train = new Train();
-            train.StartEngines();
-            Console.WriteLine("Hello World!");
+            List<Oferta> Ofertas= new List<Ofertas>()
+            
+            
+            
+            
+            ;
         }
     }
 }

@@ -5,24 +5,11 @@
 using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
-//Creemos que el administrador deberia conocer la lista de categorias. Como se hace?
-//Creemos que el administrador deberia conocer la lista de ofertas. Como se hace?
 public class Administrador: Usuario
 {
-    public string NombreUsuario {get; set;}
-    public string Contraseña {get;set;}
-    
-
-    public void RemoveOferta(string oferta)//Estos metodos deberian ir en el handler mas adelante
+    public Administrador (string nombre, string email, int edad, string telefono, string contraseña, string cedula)
+    :base(nombre, email, edad,telefono, contraseña,cedula)
     {
-        if (categorias.Contains(oferta))
-        {
-            categorias.Remove(oferta);
-        }
-    }
 
-    public string Registrarse()//como se implementa esto?
-    {
-        return ("Estas registrado");
     }
 }

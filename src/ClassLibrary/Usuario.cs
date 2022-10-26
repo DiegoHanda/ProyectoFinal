@@ -8,7 +8,7 @@ public class Usuario
     public string Email {get; set;}
     public int Edad {get; set;}
     public string Telefono {get; set;}
-    private string Contraseña;
+    public string ID {get;}
     public string Cedula{get;}
     public List Calificaciones {get; set;}
     public float Promedio {get; set;}

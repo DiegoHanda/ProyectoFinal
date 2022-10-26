@@ -9,9 +9,15 @@ public class OfertasManager
 
     public void CrearOferta(Categoria categoria,  Usuario ofertante, ArrayList<int> coordenadas, string descripcion)
     {
-        Oferta oferta = new Oferta();
+        Oferta oferta = new Oferta(categoria, ofertante, coordenadas,descripcion);
     }
-
+    public void RemoveOferta(Oferta Oferta)
+    {
+        if (this.Lista.Contains(Oferta))
+        {
+            this.Lista.Remove(Oferta);
+        }
+    }
     public void Ofertas()
     {
         /////???????????
