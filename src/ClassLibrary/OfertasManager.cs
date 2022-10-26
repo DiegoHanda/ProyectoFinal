@@ -1,3 +1,4 @@
+namespace ClassLibrary;
 public class OfertasManager
 {
     public OfertasManager()
@@ -6,7 +7,7 @@ public class OfertasManager
     }
     public void CrearOferta()
     {
-
+        Oferta oferta = new Oferta();
     }
     public void Ofertas()
     {
