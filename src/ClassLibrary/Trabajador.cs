@@ -4,7 +4,7 @@ namespace ClassLibrary;
 
 public class Trabajador: Usuario
 {
-    public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)
+    public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)//Cambio la super clase, hay que cambiar el base para que quede igual (Ver Administrador)
     {
         base(nombre, email, edad, telefono, contraseña, cedula);
     }

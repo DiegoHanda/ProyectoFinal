@@ -7,9 +7,8 @@ using System.Collections.Generic;
 namespace ClassLibrary;
 public class Administrador: Usuario
 {
-    public Administrador (string nombre, string email, int edad, string telefono, string contraseña, string cedula)
-    :base(nombre, email, edad,telefono, contraseña,cedula)
+    public Administrador (string nombre, string email, string ID)
     {
-
+        
     }
 }

@@ -9,7 +9,7 @@ public class Empleador:Usuario
     public intint ID;
     public ArrayList<int> Coordenadas;
     public string CedulaIdentidad;
-    public Empleador(string nombre, string apellido, int id, ArrayList<int> coordenadas, string cedulaIdentidad)
+    public Empleador(string nombre, string apellido, int id, ArrayList<int> coordenadas, string cedulaIdentidad)//Cambio la super clase, hay que cambiar el base para que quede igual (Ver Administrador)
     {
         this.Nombre=nombre;
         this.Apellido=apellido;
@@ -22,11 +22,11 @@ public class Empleador:Usuario
 
     }
 
-    public List<string> OfertasPorProximidad()
+    public List<string> OfertasPorProximidad()//Estas cosas van en el manager
     {
 
     }
-    public List<string> OfertasPorCalificacion()
+    public List<string> OfertasPorCalificacion()//Estas cosas van en sus manager
     {
         
     }
