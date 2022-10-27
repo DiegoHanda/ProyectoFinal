@@ -5,7 +5,7 @@ using System.Linq;
 namespace ClassLibrary;
 public class Trabajador: Cliente
 {
-    public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)
+    public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)//Cambio la super clase, hay que cambiar el base para que quede igual (Ver Administrador)
     {
         base(id, nombre, email, cedula, edad, telefono);
     }
