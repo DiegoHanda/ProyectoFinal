@@ -2,47 +2,15 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class Empleador:Usuario
+public class Empleador: Cliente
 {
-    public string Nombre;
-    public string Apellido;
-    public intint ID;
     public ArrayList<int> Coordenadas;
-    public string CedulaIdentidad;
-    public Empleador(string nombre, string apellido, int id, ArrayList<int> coordenadas, string cedulaIdentidad)
+    public Empleador (string id, string nombre, string email, string contraseña, int edad, string telefono, string cedula)
     {
-        this.Nombre=nombre;
-        this.Apellido=apellido;
-        this.ID=id;
-        this.Coordenadas=coordenadas;
-        this.CedulaIdentidad=cedulaIdentidad; 
+        base(id, nombre, email, cedula, edad, telefono);
     }
-    public List<string> OfertasPorCategoria() //Deberia tener una clase oferta Y una clase Ofertas que contenga la lista de Ofertas?
+    public override Calificacion CrearCalificacion(int valor, Trabajador calificado)
     {
-
-    }
-
-    public List<string> OfertasPorProximidad()
-    {
-
-    }
-    public List<string> OfertasPorCalificacion()
-    {
-        
-    }
-
-    public void Calificar(int calificacion)
-    {
-
-    }
-
-    public string Registrarse()
-    {
-        return ("Estas registrado");
-    }
-
-    public string GetInfoOferta(Oferta oferta)
-    {
-        
-    }
+        return base.CrearCalificacion(valor, calificado, Nombre);
+    }    
 }

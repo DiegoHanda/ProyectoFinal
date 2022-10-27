@@ -12,8 +12,11 @@ public class OfertasManager
         Oferta oferta = new Oferta();
     }
 
-    public void Ofertas()
+    public void GetOfertas()
     {
         /////???????????
+    }
+    OfertasPorCategoria (string categoria)
+    {
     }
 }

@@ -1,28 +1,16 @@
 using System;
 using System.Collections.Generic;
-namespace ClassLibrary;
+using System.Linq;
 
-public class Trabajador: Usuario
+namespace ClassLibrary;
+public class Trabajador: Cliente
 {
     public Trabajador(string nombre, string email,int edad,string telefono,string contraseña,string cedula)
     {
-        base(nombre, email, edad, telefono, contraseña, cedula);
+        base(id, nombre, email, cedula, edad, telefono);
     }
-
-    public list OfertasPorCategoria()
+    public override Calificacion CrearCalificacion(int valor, Empleador calificado)
     {
-
-    }
-    public list OfertasPorUbicacion()
-    {
-
-    }
-    public list OfertasPorReputacion()
-    {
-        
-    }
-    public string CrearOferta(string oferta,string categoria, ArrayList<int> coordenadas, string nombre)
-    {
-        Oferta oferta = new Oferta(categoria, coordenadas, nombre);
+        return base.CrearCalificacion(valor, Nombre, calificado);
     }
 }
