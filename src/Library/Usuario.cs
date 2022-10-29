@@ -8,8 +8,8 @@ public class Usuario
     public string Email {get; set;}
     public Usuario(string id, string nombre, string email)
     {
-        ID = id;
-        Nombre = nombre;
-        Email = email; 
+        this.ID = id;
+        this.Nombre = nombre;
+        this.Email = email; 
     }
 }
