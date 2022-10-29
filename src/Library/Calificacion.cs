@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class Calificacion   
 {
     public int Value {get; set;}
-    public string Calificador {get; set;}
-    public string Calificado {get; set;}
-    public Calificacion(int value, string calificador, string calificado)
+    public Cliente Calificador {get; set;}
+    public Cliente Calificado {get; set;}
+    public Calificacion(int value, Cliente calificador, Cliente calificado)
     {
         this.Value = value;
         this.Calificador = calificador;

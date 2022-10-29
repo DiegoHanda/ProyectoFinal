@@ -8,3 +8,7 @@
 
 5- Hay que hacer todos los managers. por ahora tenemos 3 que hacer
 6- hay que hacer una clase autenthicator que verifique si una accion es efectuable por un usuario determinado
+
+7- Macahdo quiere que expliquemos segun que patrones y principos decidimos implementar las clases (me imagino que con comentarios)
+
+8- Hay que hacer algo que interprete las ordenes de un usuaruio y testear que si se envian mensajes a travez del bot, el mismo capte la parte del string que necesitamos.
