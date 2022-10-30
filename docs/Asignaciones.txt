@@ -5,6 +5,6 @@ Diego Handalian:
 USUARIO, Empleador, Trabajador, CATEGORIA, Cliente
 
 Brian Morales:
-UML, CRC, CalificacionesManager, Calificacion, Contrato, ContratosManager
+UML, CRC, Calificacion, Contrato, ContratosManager
 
  
