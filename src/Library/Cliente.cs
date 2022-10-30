@@ -10,8 +10,12 @@ public class Cliente : Usuario
     public string Telefono {get; set;}
     public List<int> Calificaciones {get;}
     private double Promedio {get; set;}
-    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)
+    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : 
+    base(id, nombre, email)
     {
+        this.Cedula = cedula;
+        this.Edad = edad;
+        this.Telefono = telefono;
     }
     public Calificacion CrearCalificacion(int value, Cliente calificado) //Este método crea una calificacion
     {
