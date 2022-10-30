@@ -12,8 +12,6 @@ public class Cliente : Usuario
     private double Promedio {get; set;}
     public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)
     {
-        List <int> Calificaciones = new List<int>();
-        Promedio = Calificaciones.Average();
     }
     public Calificacion CrearCalificacion(int value, Cliente calificado) //Este método crea una calificacion
     {
