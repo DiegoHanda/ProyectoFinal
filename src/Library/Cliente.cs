@@ -9,21 +9,21 @@ public class Cliente : Usuario
     public int Edad {get; set;}
     public string Telefono {get; set;}
     public List<int> Calificaciones {get;}
-    public float Promedio {get;}
-    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) :
-        base(id, nombre, email)
+    private double Promedio {get; set;}
+    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)
     {
         List <int> Calificaciones = new List<int>();
         Promedio = Calificaciones.Average();
     }
-    public virtual Calificacion CrearCalificacion(int valor, Cliente calificado)
+    public Calificacion CrearCalificacion(int value, Cliente calificado) //Este método crea una calificacion
     {
-        Calificacion calificacion  = new Calificacion (valor, this, calificado);
+        Calificacion calificacion  = new Calificacion (value, this, calificado);
+        AddCalificacion(value);
         return calificacion;
     }
-    public Calificacion ObtenerCalificacion()
+    public void AddCalificacion(int value) //Este método agrega la nueva calificacion a la lista de calificaciones y calcula el promedio
     {
-        
+        Calificaciones.Add(value);
+        Promedio = Calificaciones.Average();
     }
-
 }
