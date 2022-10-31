@@ -3,7 +3,7 @@ using ClassLibrary;
 namespace Library.Tests;
 
 [TestFixture]
-public class ContratosManagerTests
+public class ContratosManagerTest
 {
     [Test]
     public void CrearContrato()

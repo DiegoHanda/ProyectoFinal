@@ -3,10 +3,9 @@ namespace ClassLibrary;
 
 public class Categoria
 {
-    private string Nombre {get; set;}
-    public Categoria (string nombre)
+    public string Nombre {get;}
+    public Categoria (string nombre) //Constructor de Categoria
     {
         this.Nombre = nombre;
     }
-
 }
