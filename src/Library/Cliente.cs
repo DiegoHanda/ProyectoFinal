@@ -8,7 +8,7 @@ public class Cliente : Usuario
     public string Cedula{get;}
     public int Edad {get; set;}
     public string Telefono {get; set;}
-    public List<int> Calificaciones {get;}
+    List <int> Calificaciones = new List<int>();
     public double Promedio {get; set;}
     public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)
     {
