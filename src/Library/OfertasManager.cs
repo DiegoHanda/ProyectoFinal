@@ -22,7 +22,7 @@ public class OfertasManager
         }
     }
 
-    public void GetOfertas()
+    public void GetOfertas()///////////////////////////////////////////
     {
     }
     public void OfertasPorCategoria (string categoria)
