@@ -4,7 +4,7 @@ namespace ClassLibrary;
 
 public class CategoriasManager
 {
-    List<Categoria> Lista=new List<Categoria>();
+    public List<Categoria> Lista=new List<Categoria>();
     public CategoriasManager()
     {
     }
@@ -19,7 +19,7 @@ public class CategoriasManager
                     }
                     else
                     {
-                        Console.WriteLine("La categoria ya existe");
+                        throw new Exception ("La categoria ya existe");
                     }
         }
         else
@@ -36,7 +36,7 @@ public class CategoriasManager
         }
         else 
         {
-            Console.WriteLine("La categoria no esta en la lista");
+            throw new Exception ("La categoria no esta en la lista");
         }
     }
 }
