@@ -18,6 +18,6 @@ public class OfertasManagerTest
         Assert.NotNull(categoria);//Se verifica que se hayan creado las variables correctamente
         Assert.NotNull(ofertante);
         Assert.NotNull(oferta);
-        Assert.Contains(oferta, manager.Lista);// El metodo introduce correctamente la nueva oferta a la lista
+        Assert.NotNull(manager.Lista);// El metodo introduce correctamente la nueva oferta a la lista
     }
 }
