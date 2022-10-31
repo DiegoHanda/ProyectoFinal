@@ -4,7 +4,7 @@ namespace ClassLibrary;
 
 public class CategoriasManager
 {
-    List<Categoria> Lista=new List<Categoria>();
+    public List<Categoria> Lista=new List<Categoria>();
     public CategoriasManager()
     {
     }

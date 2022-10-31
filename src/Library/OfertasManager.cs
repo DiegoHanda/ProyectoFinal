@@ -4,7 +4,7 @@ public class OfertasManager
 
 
 {
-    List<Oferta> Lista= new List<Oferta>();
+    public List<Oferta> Lista= new List<Oferta>();
     public OfertasManager()////Esto se va a crear en el programa principal y cada una de las ofertas deben ser guardadas aca
     {
         this.Lista= new List<Oferta>();
