@@ -12,7 +12,7 @@ public class OfertasManager
 
     public void CrearOferta(Categoria categoria,  Usuario ofertante, string descripcion)
     {
-        Oferta oferta = new Oferta(categoria, ofertante,descripcion);
+        Oferta oferta = new Oferta(categoria, ofertante, descripcion);
     }
     public void RemoveOferta(Oferta Oferta)
     {
