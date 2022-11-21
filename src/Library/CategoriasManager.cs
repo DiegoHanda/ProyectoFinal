@@ -8,14 +8,13 @@ public sealed class CategoriasManager
     private CategoriasManager() {}
     public static CategoriasManager Instance { get { return _instance; } }
 
-    public List<Categoria> Lista=new List<Categoria>();
-
-    public void AddCategoria(Categoria categoria)
+    public List<Categoria> Lista=new List<Categoria>();                  //Intentamos mantener un bajo acoplamiento de las clases al evitar todo lo posible que esten relacionadas
+    public void AddCategoria(Categoria categoria)                        //La mayoria de nuestras clases no dependen de otras
     {
         if (categoria != null) //chequeo de precondicion nulo o vacio
          {
                 if (!Lista.Contains(categoria))
-                    {
+                    {                                                      //Intentamos mantener la coherencia dentro de las clases sin aumentar su acoplamiento
                         this.Lista.Add(categoria);
                     }
                     else

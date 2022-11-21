@@ -3,7 +3,7 @@ namespace ClassLibrary;
 public sealed class ContratosManager
 {
     private readonly static ContratosManager _instance = new ContratosManager(); // Singleton pattern
-    private ContratosManager() {}
+    private ContratosManager() {}                                               //Al delegar la creacion de algunos objetos(como los contratos) estamos respetando el patron creator
     public static ContratosManager Instance { get { return _instance; } }
 
     public Contrato contratoCreado {get; set;}

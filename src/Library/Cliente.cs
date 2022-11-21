@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 namespace ClassLibrary;
-public class Cliente : Usuario
+public class Cliente : Usuario              // En este lugar utilizamos herencia otra vez, volviendo a cumplir con el OCP
 {
     public string Cedula{get;}
     public int Edad {get; set;}

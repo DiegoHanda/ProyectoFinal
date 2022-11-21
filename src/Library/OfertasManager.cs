@@ -10,10 +10,10 @@ public sealed class OfertasManager
     public List<Oferta> Ofertas = new List<Oferta>();
     public void CrearOferta(Categoria categoria,  Trabajador ofertante, string descripcion)
     {
-        Oferta oferta = new Oferta(categoria, ofertante, descripcion);
-        Ofertas.Add(oferta);
+        Oferta oferta = new Oferta(categoria, ofertante, descripcion);                          //Este manager(igual que los otros) contiene toda la informacion sobre su respectiva area
+        Ofertas.Add(oferta);                                                                    // por esto, tiene las responsabilidades de crear dichos objetos y de eliminarlos de una
     }
-    public void RemoveOferta(Oferta Oferta)
+    public void RemoveOferta(Oferta Oferta)                                                     //lista. Por esto consideramos que se cumple el patron de Experto
     {
         if (Ofertas.Contains(Oferta)) {
             Ofertas.RemoveAll(x => x == Oferta);
