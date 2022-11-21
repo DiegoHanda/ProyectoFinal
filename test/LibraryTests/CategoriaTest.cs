@@ -10,7 +10,7 @@ public class CategoriaTests
     {
         Categoria categoria = new Categoria("Jardineria");
 
-        Assert.NotNull(categoria); // Categoria no Null
-        Assert.AreEqual(categoria.Nombre, "Jardineria" ); // Nombre de la categoria coincide con el string esperado
+        Assert.NotNull(categoria); // Instancia creada
+        Assert.AreEqual(categoria.Nombre, "Jardineria" ); // Getter de Nombre
     }
 }
