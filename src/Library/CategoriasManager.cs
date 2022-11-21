@@ -4,7 +4,7 @@ namespace ClassLibrary;
 
 public class CategoriasManager
 {
-    public List<Categoria> Lista=new List<Categoria>();
+    public List<Categoria> Lista = new List<Categoria>();
     public CategoriasManager()
     {
     }
@@ -12,19 +12,19 @@ public class CategoriasManager
     public void AddCategoria(Categoria categoria)
     {
         if (categoria != null) //chequeo de precondicion nulo o vacio
-         {
-                if (!Lista.Contains(categoria))
-                    {
-                        this.Lista.Add(categoria);
-                    }
-                    else
-                    {
-                        throw new Exception ("La categoria ya existe");
-                    }
+        {
+            if (!Lista.Contains(categoria))
+            {
+                this.Lista.Add(categoria);
+            }
+            else
+            {
+                throw new Exception("La categoria ya existe");
+            }
         }
         else
         {
-            throw new Exception ("La categoria necesita un nombre");// Hay que hacer el try y catch despues
+            throw new Exception("La categoria no puede ser nula");// Hay que hacer el try y catch despues
         }
     }
 
@@ -34,11 +34,11 @@ public class CategoriasManager
         {
             this.Lista.Remove(categoria);
         }
-        else 
+        else
         {
-            throw new Exception ("La categoria no esta en la lista");
+            throw new Exception("La categoria no esta en la lista");
         }
     }
 }
-                //Hay que verificar que lo que se ingrese en string, no sea un string vacio
+//Hay que verificar que lo que se ingrese en string, no sea un string vacio
 

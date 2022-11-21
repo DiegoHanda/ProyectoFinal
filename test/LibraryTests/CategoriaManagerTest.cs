@@ -1,5 +1,7 @@
 using NUnit.Framework;
 using ClassLibrary;
+using System;
+
 namespace Library.Tests;
 
 [TestFixture]
@@ -13,7 +15,7 @@ public class CategoriaManagerTest
         man1.AddCategoria(categoria);
 
 
-        
+
         Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
         Assert.NotNull(man1); // Verificando que el manager se haya creado correctamente
         Assert.Contains(categoria, man1.Lista);//El metodo introduce correctamente la categoria a la lista
@@ -22,7 +24,7 @@ public class CategoriaManagerTest
 
         Assert.IsEmpty(man1.Lista);
     }
-[Test]
+    [Test]
     public void RemoveCategoria()
     {
         CategoriasManager man1 = new CategoriasManager();
@@ -30,7 +32,7 @@ public class CategoriaManagerTest
         man1.AddCategoria(categoria);
 
 
-        
+
         Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
         Assert.NotNull(man1); // Verificando que el manager se haya creado correctamente
         Assert.Contains(categoria, man1.Lista);//El metodo introduce correctamente la categoria a la lista
@@ -38,6 +40,25 @@ public class CategoriaManagerTest
         man1.RemoveCategoria(categoria);
 
         Assert.IsEmpty(man1.Lista);
+    }
+    [Test]
+    
+    public void CategoriaDuplicada()
+    {
+        CategoriasManager man1 = new CategoriasManager();
+        Categoria categoria = new Categoria("Limpieza");
+        man1.AddCategoria(categoria);
+        Assert.Contains(categoria, man1.Lista);//El metodo introduce correctamente la categoria a la lista
+        try
+        {
+            man1.AddCategoria(categoria);
+            
+        }
+        catch                                       //Para mostrar
+        {
+            Assert.Pass();
+        }
+        Assert.Fail();
     }
 }
 
