@@ -15,8 +15,8 @@ public class ContratoTests
         Empleador empleador = new Empleador("78955548-9", "Luska", "Mr.Walker@gmail.com", "5464332-8", 45, "888427153");
         Contrato contrato = new Contrato(oferta, empleador);
         
-        Assert.NotNull(contrato); // Contrato no null
-        Assert.AreEqual(contrato.Oferta, oferta); // La oferta del contrato coincide con la oferta ingresada
-        Assert.AreEqual(contrato.Empleador, empleador); // El empleador del contrato coincide con el empleador ingresado
+        Assert.NotNull(contrato); // Instancia create
+        Assert.AreEqual(contrato.Oferta, oferta); // Getter de oferta
+        Assert.AreEqual(contrato.Empleador, empleador); // Getter de empleador
     }
 }

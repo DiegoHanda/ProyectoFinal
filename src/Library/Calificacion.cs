@@ -9,8 +9,17 @@ public class Calificacion          //Algunas de estas clases fueron separadas de
     public Cliente Calificado {get; set;}
     public Calificacion(int value, Cliente calificador, Cliente calificado)
     {
-        this.Value = value;
-        this.Calificador = calificador;
-        this.Calificado = calificado;
+        if (value>=1 && value<=5)
+        {
+            this.Value = value;
+            this.Calificador = calificador;
+            this.Calificado = calificado;
+        }
+        else
+        {
+            throw new Exception ($"{value} no es un puntaje válido");
+        }
+
+
     }
 }
