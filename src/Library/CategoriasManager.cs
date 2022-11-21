@@ -39,6 +39,6 @@ public class CategoriasManager
             throw new Exception("La categoria no esta en la lista");
         }
     }
-}
-//Hay que verificar que lo que se ingrese en string, no sea un string vacio
 
+
+}
