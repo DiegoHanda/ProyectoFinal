@@ -9,15 +9,15 @@ public class Calificacion
     public Cliente Calificado {get; set;}
     public Calificacion(int value, Cliente calificador, Cliente calificado)
     {
-        if (value<1 || value>5)
-        {
-            throw new Exception ($"{value} no es un puntaje válido");
-        }
-        else
+        if (value>=1 && value<=5)
         {
             this.Value = value;
             this.Calificador = calificador;
             this.Calificado = calificado;
+        }
+        else
+        {
+            throw new Exception ($"{value} no es un puntaje válido");
         }
 
 
