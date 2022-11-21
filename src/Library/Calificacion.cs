@@ -2,7 +2,7 @@ using System;
 namespace ClassLibrary;
 using System.Collections.Generic;
 
-public class Calificacion          //Algunas de estas clases fueron separadas desde conceptos mas abstractos. Creando clases que tengan resposabilidades especificas para cumplir
+public class Calificacion          //Algunas de estas clases fueron separadas desde conceptos mas abstractos. Creando clases que tengan resposabilidades especificas
 {
     public int Value {get; set;}   // para cumplir con el SRP
     public Cliente Calificador {get; set;}
