@@ -21,8 +21,8 @@ public class ClienteTest
         
 
         cliente.CrearCalificacion(3, cliente2); // Creamos una Calificacion desde Cliente
-
+        
         Assert.AreEqual(cliente2.Promedio, 3); // La oferta del contrato coincide con la oferta ingresada
-        //Assert.AreEqual(cliente2.Calificaciones, ); // El cliente del contrato coincide con el cliente ingresado
+        Assert.AreEqual(cliente2.Calificaciones[0].Value, 3); // El cliente del contrato coincide con el cliente ingresado
     }
 }

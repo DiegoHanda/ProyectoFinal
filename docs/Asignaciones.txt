@@ -2,7 +2,7 @@ Javier Odera:
 Administrador, Oferta, OfertasManager, CategoriasManager
 
 Diego Handalian:
-USUARIO, Empleador, Trabajador, CATEGORIA, Cliente
+USUARIO, Empleador, Trabajador, CATEGORIA, Cliente, ChatBot
 
 Brian Morales:
 UML, CRC, Calificacion, Contrato, ContratosManager
