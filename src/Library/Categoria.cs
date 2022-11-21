@@ -6,6 +6,13 @@ public class Categoria
     public string Nombre {get;}
     public Categoria (string nombre) //Constructor de Categoria
     {
-        this.Nombre = nombre;
+        if (String.IsNullOrEmpty(nombre))
+        {
+            throw new Exception ("El nombre de la categoria no es válido");
+        }
+        else
+        {
+            this.Nombre = nombre;
+        }
     }
 }

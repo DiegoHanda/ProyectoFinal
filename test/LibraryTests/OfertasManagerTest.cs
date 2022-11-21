@@ -61,7 +61,6 @@ public class OfertasManagerTest
         Calificacion calificacion = new Calificacion(3, ofertante, ofertante2);
         Calificacion calificacion2 = new Calificacion(2, ofertante2, ofertante);
 
-
         Assert.AreEqual(OfertasManager.Instance.Ofertas[0].Ofertante, OfertasManager.Instance.PorReputacion()[0].Ofertante); // Testeamos que nos haya traido la oferta esperada por reputacion
     }
 }
