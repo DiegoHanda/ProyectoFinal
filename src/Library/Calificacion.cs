@@ -9,20 +9,17 @@ public class Calificacion
     public Cliente Calificado {get; set;}
     public Calificacion(int value, Cliente calificador, Cliente calificado)
     {
-        if (value == null)
-        {
-            throw new Exception ("No se ha ingresado ningún número");
-        }
-        else if (value<1 || value>5)
+        if (value<1 || value>5)
         {
             throw new Exception ($"{value} no es un puntaje válido");
         }
         else
         {
             this.Value = value;
+            this.Calificador = calificador;
+            this.Calificado = calificado;
         }
-        
-        this.Calificador = calificador;
-        this.Calificado = calificado;
+
+
     }
 }
