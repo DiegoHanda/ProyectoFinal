@@ -6,36 +6,19 @@ namespace Library.Tests;
 public class CategoriaManagerTest
 {
     [Test]
-    public void AddCategoria()
+    public void CrearCategoria()
     {
-        Categoria categoria = new Categoria("Limpieza");
-        CategoriasManager.Instance.AddCategoria(categoria);
-
-
+        CategoriasManager.Instance.CrearCategoria("C#");
         
-        Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
-        Assert.NotNull(CategoriasManager.Instance); // Verificando que el manager se haya creado correctamente
-        Assert.Contains(categoria, CategoriasManager.Instance.Lista);//El metodo introduce correctamente la categoria a la lista
-
-        CategoriasManager.Instance.RemoveCategoria(categoria);
-
-        Assert.IsEmpty(CategoriasManager.Instance.Lista);
+        Assert.NotNull(CategoriasManager.Instance.Categorias[0]); // Instancia creada y agregada a la lista
+        Assert.AreEqual("C#", CategoriasManager.Instance.Categorias[0].Nombre); // Instancia coincide con la categoria
     }
-[Test]
+    
+    [Test]
     public void RemoveCategoria()
     {
-        Categoria categoria = new Categoria("Limpieza");
-        CategoriasManager.Instance.AddCategoria(categoria);
-
-
-        
-        Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
-        Assert.NotNull(CategoriasManager.Instance); // Verificando que el manager se haya creado correctamente
-        Assert.Contains(categoria, CategoriasManager.Instance.Lista);//El metodo introduce correctamente la categoria a la lista
-
-        CategoriasManager.Instance.RemoveCategoria(categoria);
-
-        Assert.IsEmpty(CategoriasManager.Instance.Lista);
+        CategoriasManager.Instance.RemoveCategoria(CategoriasManager.Instance.Categorias[0]); // Instancia removida
+        Assert.IsEmpty(CategoriasManager.Instance.Categorias); // Instancia removida de la lista
     }
 }
 
