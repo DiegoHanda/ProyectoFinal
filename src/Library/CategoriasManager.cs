@@ -39,6 +39,4 @@ public class CategoriasManager
             throw new Exception("La categoria no esta en la lista");
         }
     }
-
-
 }
