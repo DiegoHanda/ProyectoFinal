@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 namespace ClassLibrary;
 
-public class CategoriasManager
+public sealed class CategoriasManager
 {
+    private readonly static CategoriasManager _instance = new CategoriasManager(); // Singleton pattern
+    private CategoriasManager() {}
+    public static CategoriasManager Instance { get { return _instance; } }
+
     public List<Categoria> Lista=new List<Categoria>();
-    public CategoriasManager()
-    {
-    }
 
     public void AddCategoria(Categoria categoria)
     {
@@ -39,5 +40,4 @@ public class CategoriasManager
             throw new Exception ("La categoria no esta en la lista");
         }
     }
-
 }

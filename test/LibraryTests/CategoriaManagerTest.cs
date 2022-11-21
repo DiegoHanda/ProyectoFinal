@@ -8,36 +8,34 @@ public class CategoriaManagerTest
     [Test]
     public void AddCategoria()
     {
-        CategoriasManager man1 = new CategoriasManager();
         Categoria categoria = new Categoria("Limpieza");
-        man1.AddCategoria(categoria);
+        CategoriasManager.Instance.AddCategoria(categoria);
 
 
         
         Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
-        Assert.NotNull(man1); // Verificando que el manager se haya creado correctamente
-        Assert.Contains(categoria, man1.Lista);//El metodo introduce correctamente la categoria a la lista
+        Assert.NotNull(CategoriasManager.Instance); // Verificando que el manager se haya creado correctamente
+        Assert.Contains(categoria, CategoriasManager.Instance.Lista);//El metodo introduce correctamente la categoria a la lista
 
-        man1.RemoveCategoria(categoria);
+        CategoriasManager.Instance.RemoveCategoria(categoria);
 
-        Assert.IsEmpty(man1.Lista);
+        Assert.IsEmpty(CategoriasManager.Instance.Lista);
     }
 [Test]
     public void RemoveCategoria()
     {
-        CategoriasManager man1 = new CategoriasManager();
         Categoria categoria = new Categoria("Limpieza");
-        man1.AddCategoria(categoria);
+        CategoriasManager.Instance.AddCategoria(categoria);
 
 
         
         Assert.NotNull(categoria); // Verificacion de que la categoria este siendo creada adecuadamente
-        Assert.NotNull(man1); // Verificando que el manager se haya creado correctamente
-        Assert.Contains(categoria, man1.Lista);//El metodo introduce correctamente la categoria a la lista
+        Assert.NotNull(CategoriasManager.Instance); // Verificando que el manager se haya creado correctamente
+        Assert.Contains(categoria, CategoriasManager.Instance.Lista);//El metodo introduce correctamente la categoria a la lista
 
-        man1.RemoveCategoria(categoria);
+        CategoriasManager.Instance.RemoveCategoria(categoria);
 
-        Assert.IsEmpty(man1.Lista);
+        Assert.IsEmpty(CategoriasManager.Instance.Lista);
     }
 }
 

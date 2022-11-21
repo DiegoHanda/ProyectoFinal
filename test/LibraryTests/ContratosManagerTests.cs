@@ -13,12 +13,11 @@ public class ContratosManagerTest
         Oferta oferta = new Oferta(categoria, ofertante, "C# with 3yrs exp");
 
         Empleador empleador = new Empleador("78955548-9", "Luska", "Mr.Walker@gmail.com", "5464332-8", 45, "888427153");
-        ContratosManager contrato = new ContratosManager();
         
         // Creamos un contrato desde ContratosManager
-        contrato.CrearContrato(oferta, empleador);
-        Assert.NotNull(contrato); // Contrato no null
-        Assert.AreEqual(contrato.contratoCreado.Oferta, oferta); // La oferta del contrato coincide con la oferta ingresada
-        Assert.AreEqual(contrato.empleadorCreado, empleador); // El empleador del contrato coincide con el empleador ingresado
+        ContratosManager.Instance.CrearContrato(oferta, empleador);
+        Assert.NotNull(ContratosManager.Instance.contratoCreado); // Contrato no null
+        Assert.AreEqual(ContratosManager.Instance.contratoCreado.Oferta, oferta); // La oferta del contrato coincide con la oferta ingresada
+        Assert.AreEqual(ContratosManager.Instance.empleadorCreado, empleador); // El empleador del contrato coincide con el empleador ingresado
     }
 }

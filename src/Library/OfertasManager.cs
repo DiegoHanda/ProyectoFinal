@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 namespace ClassLibrary;
-public class OfertasManager
-
-
+public sealed class OfertasManager
 {
+    private readonly static OfertasManager _instance = new OfertasManager(); // Singleton pattern
+    private OfertasManager() {}
+    public static OfertasManager Instance { get { return _instance; } }
+
     public List<Oferta> Ofertas = new List<Oferta>();
     public void CrearOferta(Categoria categoria,  Trabajador ofertante, string descripcion)
     {

@@ -1,8 +1,11 @@
 using System;
 namespace ClassLibrary;
-public class ContratosManager
+public sealed class ContratosManager
 {
-    public ContratosManager() {}
+    private readonly static ContratosManager _instance = new ContratosManager(); // Singleton pattern
+    private ContratosManager() {}
+    public static ContratosManager Instance { get { return _instance; } }
+
     public Contrato contratoCreado {get; set;}
     public Empleador empleadorCreado {get; set;}
     public void CrearContrato(Oferta oferta,  Empleador empleador) // Este metodo se usa para contruir contratos
