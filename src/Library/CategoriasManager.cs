@@ -33,7 +33,7 @@ public sealed class CategoriasManager
 
     public void RemoveCategoria(Categoria categoria)
     {
-        if (Categorias.Contains(categoria)) {
+        if (Categoria.Contains(categoria)) {
             Categorias.RemoveAll(x => x == categoria);
         }
     }
