@@ -11,7 +11,7 @@ public class Cliente : Usuario
     public List <Calificacion> Calificaciones = new List<Calificacion>();
     public List <int> Values = new List<int>();
     public double Promedio {get; set;}
-    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)
+    public Cliente(string id, string nombre, string email, string cedula, int edad, string telefono) : base(id, nombre, email)// En este lugar utilizamos herencia otra vez, volviendo a cumplir con el OCP
     {
         this.Cedula = cedula;
         this.Edad = edad;
