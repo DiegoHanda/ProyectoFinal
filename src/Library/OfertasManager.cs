@@ -8,7 +8,11 @@ public sealed class OfertasManager
     public static OfertasManager Instance { get { return _instance; } }
 
     public List<Oferta> Ofertas = new List<Oferta>();
+                                                                                                    //Este manager(igual que los otros) contiene toda la informacion sobre su respectiva area
+                                                                                                    // por esto, tiene las responsabilidades de crear dichos objetos y de eliminarlos de una
+                                                                                                    //lista. Por esto consideramos que se cumple el patron de Experto
     public void CrearOferta(Categoria categoria,  Trabajador ofertante, string descripcion)
+
     {
         Oferta oferta = new Oferta(categoria, ofertante, descripcion);
         Ofertas.Add(oferta);
