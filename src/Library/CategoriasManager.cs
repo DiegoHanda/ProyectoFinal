@@ -5,7 +5,7 @@ namespace ClassLibrary;
 
 public sealed class CategoriasManager
 {
-    private readonly static CategoriasManager _instance = new CategoriasManager(); // Singleton pattern
+    private readonly static CategoriasManager _instance = new CategoriasManager(); // Aca se usa un singleton para que esta clase solo pueda ser instanciada una vez
     private CategoriasManager() {}
                                         //Intentamos mantener un bajo acoplamiento de las clases al evitar todo lo posible que esten relacionadas
                                         //La mayoria de nuestras clases no dependen de otras
@@ -18,7 +18,7 @@ public sealed class CategoriasManager
         Categorias.Add(categoria);
     }
 
-    public void RemoveCategoria(Categoria categoria)
+    public void RemoveCategoria(Categoria categoria) //Este metodo elimina una categoria de la lista de categorias
     {
         if (Categorias.Contains(categoria)) {
             Categorias.RemoveAll(x => x == categoria);
