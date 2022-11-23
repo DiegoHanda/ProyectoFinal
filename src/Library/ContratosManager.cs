@@ -17,7 +17,7 @@ public sealed class ContratosManager
 
     public void RemoveContrato(Contrato contrato)
     {
-        Check.Precondition(Contratos.Contains(contrato));//Chequeamos precondiciones segun diseo por contrato
+        Check.Precondition(Contratos.Contains(contrato));//Chequeamos precondiciones segun diseño por contrato
         Contratos.RemoveAll(x => x == contrato);
     }
 }
