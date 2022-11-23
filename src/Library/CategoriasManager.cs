@@ -19,8 +19,8 @@ public sealed class CategoriasManager
 
     public void RemoveCategoria(Categoria categoria) //Este metodo elimina una categoria de la lista de categorias
     {
-        if (Categorias.Contains(categoria)) {
-            Categorias.RemoveAll(x => x == categoria);
-        }
+        Check.Precondition(Categorias.Contains(categoria));//Chequeamos precondiciones segun diseo por contrato
+        Categorias.RemoveAll(x => x == categoria);
+        
     }
 }

@@ -10,17 +10,9 @@ public class Calificacion   //Algunas de estas clases (Calificacion,Contrato, Of
     public Cliente Calificado {get; set;}
     public Calificacion(int value, Cliente calificador, Cliente calificado)  //Constructor de Calificacion
     {
-        if (value>=1 && value<=5)
-        {
-            this.Value = value;
-            this.Calificador = calificador;
-            this.Calificado = calificado;
-        }
-        else
-        {
-            throw new Exception ($"{value} no es un puntaje válido");
-        }
-
-
+        Check.Precondition(value>=1 && value<=5);        //Chequeamos precondiciones segun diseo por contrato
+        this.Value = value;
+        this.Calificador = calificador;
+        this.Calificado = calificado;
     }
 }
