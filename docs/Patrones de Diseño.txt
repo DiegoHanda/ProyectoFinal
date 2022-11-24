@@ -1,0 +1,1 @@
+SINGLETON: Utilizado en los Managers para evitar que haya mas de una instancia de las siguientes clases; OfertasManager, CategoriasManager, ContratosManager.
